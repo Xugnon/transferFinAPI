@@ -43,6 +43,7 @@ export class CreateTransferUseCase {
       type: OperationType.TRANSFER,
     });
 
+
     await this.statementsRepository.create({
       user_id: receivedUser.id as string,
       description,
